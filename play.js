@@ -32,19 +32,19 @@ let studentsDb = [
 let maths = []
 let psychology = []
 
-function alloDept(arrStu){
-    for (let student in arrStu){
-        if (arrStu[student].course === "maths"){
-            maths.push(arrStu[student])
-        } else if(arrStu[student].course === "psychology") {
-            psychology.push(arrStu[student])
-        }
-    }
-    console.log("Maths Department:", maths);
-    console.log("Psychology Department:", psychology);
-}
+// function alloDept(arrStu){
+//     for (let student in arrStu){
+//         if (arrStu[student].course === "maths"){
+//             maths.push(arrStu[student])
+//         } else if(arrStu[student].course === "psychology") {
+//             psychology.push(arrStu[student])
+//         }
+//     }
+//     console.log("Maths Department:", maths);
+//     console.log("Psychology Department:", psychology);
+// }
 
-alloDept(studentsDb)
+// alloDept(studentsDb)
 
 function addStudent( name,age,gender,course){
        let id = studentsDb.length +1
@@ -72,6 +72,10 @@ function addStudent( name,age,gender,course){
          studentsDb.push(student)
          
      } 
-         function deleteStudent(){
-              
+         function deleteStudent( ){
+        
+            let student = studentsDb.pop()
+            
+               console.log("student after deleting ", studentsDb)
          }
+         deleteStudent()
