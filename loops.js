@@ -100,6 +100,7 @@ let numberId =[
 {
       name:"favor",
       age: 29,
+      
       gender: "m",
       course: "maths"
 },
@@ -147,7 +148,19 @@ let english =[]
    console.log("student in department of maths are:", english)
  }
   
- departmentCheck(numberId)
+  departmentCheck(numberId)
+
+    function createNwestudent(name,age,gender, course){
+        let newStudent = {
+            name:name,
+            age : age,
+            gender:gender,
+            course: course
+        }    
+         numberId.push(newStudent)
+         console.log(" list of student after adding a new student",numberId)
+    }    
+     createNwestudent("olawale", 30, "m", "english")
 
  // create a new student and add to database
  // update a student data

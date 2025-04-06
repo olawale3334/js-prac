@@ -100,13 +100,99 @@
 // console.log(`Number of vowel alphabets in "${input2}": ${vowelCount2}`);
 
 // 
-function calculateAverage(numbers) {
-    let sum = 0;
-    for (let i = 0; i < numbers.length; i++) {
-      sum += numbers[i];
-    }
-    return sum / numbers.length;
-  }
-  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const average = calculateAverage(numbers);
-console.log(average); // Output: 5.5
+// function calculateAverage(numbers) {
+//     let sum = 0;
+//     for (let i = 0; i < numbers.length; i++) {
+//       sum += numbers[i];
+//     }
+//     return sum / numbers.length;
+//   }
+//   const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const average = calculateAverage(numbers);
+// console.log(average); // Output: 5.5
+
+
+
+// assignment task 2
+
+let moviesDb =[
+  {
+    title:"Archemy of soul",
+    id : 1,
+    Genre: "action",
+    year: 2022,
+   watched: 'true'
+    
+  },
+  {
+    title:"taxi driver",
+    id : 2,
+    Genre: "action",
+    year: 2022,
+    watched: 'false'
+
+    
+  },
+  {
+    title:"Archalugo",
+    id : 3,
+    Genre: "love",
+    year: 2025,
+    watched: 'false'
+  },
+  {
+    title:"all of us are dead",
+    id : 4,
+    Genre: "horror",
+    year: 2023,
+   watched: 'true'
+  },
+  {
+    title:"uncanny counter",
+    id : 5,
+    Genre: "action",
+    year: 2022,
+    watched: 'false'
+  },
+]
+let watch =[]
+let unwatched =[]
+ 
+
+function addMovie( title,id, Genre,year,watched){
+    
+   let movie = {
+     title: title,
+     id: id,
+     Genre:Genre,
+     year: year,
+     watched: watched
+}
+  moviesDb.push(movie)
+  console.log("moive watchlist after adding a new moives", moviesDb)
+}
+addMovie("Night agent",5,"action",2022, 'true')
+addMovie("Vicenzo casanova",6,"action",2021, 'true')
+
+function markASWuw(mark){
+     for ( let movie in mark) {
+       if (mark[movie].watched === 'true'){
+         watch.push(mark[movie])
+       } else if (mark[movie].watched === 'false'){
+          unwatched.push(mark[movie])
+      }
+     }  console.log("result after mark as watched", watch)
+     console.log("result after mark as unwatched", unwatched)
+}
+  markASWuw(moviesDb)
+
+  moviesDb.forEach(movie => {
+    console.log( `watched:${movie.watched} `)
+  });
+          function deleteM() {
+            moviesDb.pop()
+            console.log( "movie list after deleting one",moviesDb)
+            
+          }
+          deleteM()
+          
