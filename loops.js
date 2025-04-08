@@ -96,7 +96,7 @@
 
 //example of nested loops
 
-let numberId =[
+/*let numberId =[
 {
       name:"favor",
       age: 29,
@@ -165,6 +165,17 @@ let english =[]
  // create a new student and add to database
  // update a student data
  // delete a student
- // categories student from diff dept in a single range ------>below 18
+ // categories student from diff dept in a single range ------>below 18*/
  
 
+
+  // for of  loop
+  let character =["mario",'sonice',"java","snooker", "hi"]
+
+  for(x of character){
+    if (x === "snooker"){
+        break
+    } else{
+        console.log(x)
+    }
+  }

@@ -25,27 +25,31 @@ let studentsDb = [
         id : 4,
         age: 19,
         gender: "m",
-        course: "psychology"
+        course: "maths"
     }
 ]
-console.log("list ")
+console.log("list of student before adding ",studentsDb)
 
 let maths = []
 let psychology = []
 
-// function alloDept(arrStu){
-//     for (let student in arrStu){
-//         if (arrStu[student].course === "maths"){
-//             maths.push(arrStu[student])
-//         } else if(arrStu[student].course === "psychology") {
-//             psychology.push(arrStu[student])
-//         }
-//     }
-//     console.log("Maths Department:", maths);
-//     console.log("Psychology Department:", psychology);
-// }
+function alloDept(student){
+    student.forEach(student => {
+        });
 
-// alloDept(studentsDb)
+        if (student.course === "maths"){
+            maths.push(student)
+        } else if(student.course === "psychology") {
+            psychology.push(student)
+        }
+    }
+    console.log("Maths Department:", maths);
+    console.log("Psychology Department:", psychology);
+
+
+    
+
+alloDept(studentsDb)
 
 function addStudent( name,age,gender,course){
        let id = studentsDb.length +1
@@ -73,8 +77,24 @@ function addStudent( name,age,gender,course){
          studentsDb.push(student)
          
      } 
-         function deleteStudent( ){
-          studentsDb.splice( 2,1)
+
+
+
+
+      function updatestuden(id){
+            for(student in studentsDb){
+                if (studentsDb[student].id==id){
+                    studentsDb[student].course ="social studies"
+                }
+            } console.log( " student data after updating",studentsDb)
+         }
+         updatestuden(3)
+         
+         function deleteStudentid(studentId ){
+          studentsDb.splice( studentId -1,1)
            console.log("student data base after deleting a student",studentsDb)
          }
-         deleteStudent()
+         deleteStudentid(4)
+
+         
+        
