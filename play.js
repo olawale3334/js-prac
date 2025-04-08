@@ -28,6 +28,7 @@ let studentsDb = [
         course: "psychology"
     }
 ]
+console.log("list ")
 
 let maths = []
 let psychology = []
@@ -73,9 +74,7 @@ function addStudent( name,age,gender,course){
          
      } 
          function deleteStudent( ){
-        
-            let student = studentsDb.pop()
-            
-               console.log("student after deleting ", studentsDb)
+          studentsDb.splice( 2,1)
+           console.log("student data base after deleting a student",studentsDb)
          }
          deleteStudent()
