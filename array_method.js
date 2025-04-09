@@ -5,4 +5,10 @@
  //console.log(supers.indexOf('flash'))
  //console.log(supers.shift())
 // console.log(supers);
+  // console.log(supers.unshift('thor'));
+  
+ //  merging of 2 arrays using concat
+ let newsuper = supers.concat(["professor","hacker", "blockchain"])
+  console.log(newsuper);
+    
  
