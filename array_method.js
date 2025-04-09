@@ -15,5 +15,17 @@
 //    let supers = "superman , batman, flash";
 //    let supersArray =supers.split(',')
 //    console.log(supersArray)
-    
+     
+ // console.log(supers.reverse())
+ //supers.sort();
+ //console.log(supers);
  
+   let fruits =[ "apple","orange","banna"]
+//     fruits.unshift("cherry","pinapple")
+//    console.log(fruits)
+//    fruits.push( "plum","grape")
+//    console.log(fruits)
+   fruits.splice(1,1, "lemon")
+   console.log(fruits)
+    fruits.sort()
+    console.log(fruits)
