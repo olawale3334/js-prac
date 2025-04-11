@@ -80,24 +80,24 @@
 
 //
 
-// function countVowels(str) {
-//     let vowels = 'aeiouAEIOU';
-//     let count = 0;
-//     for (let i = 0; i < str.length; i++) {
-//       if (vowels.includes(str[i])) {
-//         count++;
-//       }
-//     }
-//     return count;
-//   }
+function countVowels(str) {
+    let vowels = 'aeiouAEIOU';
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+      if (vowels.includes(str[i])) {
+        count++;
+      }
+    }
+    return count;
+  }
 
-//   const input1 = 'Hello World';
-// const input2 = 'Jennifer';
-// const vowelCount1 = countVowels(input1);
-// const vowelCount2 = countVowels(input2);
+  const input1 = 'Hello World';
+const input2 = 'Jennifer';
+const vowelCount1 = countVowels(input1);
+const vowelCount2 = countVowels(input2);
 
-// console.log(`Number of vowel alphabets in "${input1}": ${vowelCount1}`);
-// console.log(`Number of vowel alphabets in "${input2}": ${vowelCount2}`);
+console.log(`Number of vowel alphabets in "${input1}": ${vowelCount1}`);
+console.log(`Number of vowel alphabets in "${input2}": ${vowelCount2}`);
 
 // 
 // function calculateAverage(numbers) {

@@ -33,23 +33,19 @@ console.log("list of student before adding ",studentsDb)
 let maths = []
 let psychology = []
 
-function alloDept(student){
-    student.forEach(student => {
-        });
-
-        if (student.course === "maths"){
-            maths.push(student)
-        } else if(student.course === "psychology") {
-            psychology.push(student)
+    function sortStudent(student){
+        student.forEach(student=>{
+            if(student.course === "maths"){
+                   maths.push(student)
+            }else if(student.course === "psychology"){
+                psychology.push(student)
+            }
+        })
+            console.log(" student in MATHS dept", maths);
+            console.log(" student in psychology dept", psychology);
         }
-    }
-    console.log("Maths Department:", maths);
-    console.log("Psychology Department:", psychology);
-
-
-    
-
-alloDept(studentsDb)
+        
+        sortStudent(studentsDb)
 
 function addStudent( name,age,gender,course){
        let id = studentsDb.length +1
